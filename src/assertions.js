@@ -39,6 +39,17 @@ class Assertions {
             }
         }
     }
+
+    static assertDeepEqual(actual, expected, message = "") {
+        const actualJSON = JSON.stringify(actual);
+        const expectedJSON = JSON.stringify(expected);
+
+        if (actualJSON !== expectedJSON) {
+            throw new Error(`Assertion Failed: ${message}\nExpected: ${expectedJSON}\nActual: ${actualJSON}`);
+        }
+    }
+
+    
 }
 
 module.exports = Assertions;
