@@ -1,5 +1,6 @@
 
 const Reporter = require("./reporter.js");
+const Assertions = require("./assertions.js");
 // import Reporter from "./reporter.js";
 
 class TestFramework {
