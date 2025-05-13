@@ -26,6 +26,6 @@ class TestFramework {
     }
 }
 
-module.exports = TestFramework;
+module.exports = { TestFramework, Assertions };
 //export default TestFramework;
 
